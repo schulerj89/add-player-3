@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Add Player</h1>
+        <div>
+            <a href="/">Home</a>
+            <a href="/player/add">Add Player</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <form action="/player/save" method="POST">
+                <input type="hidden" value="create" name="type">
+                <div>
+                    <label>Name:</label>
+                    <input type="text" name="player_name">
+                </div>
+                <div>
+                    <label>Position:</label>
+                    <select name="position">
+                        <option value="PG">PG</option>
+                        <option value="SG">SG</option>
+                        <option value="SF">SF</option>
+                        <option value="PF">PF</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div><input type="submit" value="submit"></div>
+            </form>
+        </div>
+    </body>
+</html>
